@@ -64,7 +64,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 0 20px;
   width: 35vw;
+  min-width: 450px;
 }
 
 #top-section .rating-item-1, .rating-item-2, .rating-item-3 {
@@ -171,4 +173,55 @@ footer {
 
 footer a {
   color: hsl(228, 79%, 63%);
+}
+
+
+@media (max-width: 1200px) {
+  #top-section .info {
+    max-width: 40vw;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  #top-section {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  #top-section .info {
+    max-width: 90vw;
+    padding: 0 40px;
+  }
+  #top-section .rating {
+    width: 90vw;
+    padding: 20px 40px;
+  }
+  #top-section .rating-item-1, #top-section .rating-item-3 {
+    align-self: center;
+  }
+  #bottom-section .user-comment-item-3 {
+    margin: 0 20px 20px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  #top-section .rating {
+    width: 40vw;
+    padding: 20px 10px;
+  }
+  #top-section .rating-item-1, .rating-item-2, .rating-item-3 {
+    flex-direction: column-reverse;
+  }
+  #top-section .rating-item-1, #top-section .rating-item-3 {
+    align-self: center;
+  }
+  #bottom-section {
+    margin: 20px 0 10px 0;
+  }
+  #bottom-section .user-comment-item-1, .user-comment-item-2, .user-comment-item-3 {
+    height: 240px;
+    padding: 15px 10px;
+    width: 280px;
+  }
 }
