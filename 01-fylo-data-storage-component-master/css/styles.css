@@ -216,3 +216,64 @@ footer a {
     visibility: hidden;
   }
 }
+
+@media (max-width: 790px) {
+  .container {
+    height: 60vh;
+    width: 700px;
+    padding-bottom: 150px;
+  }
+  .left-container {
+    min-width: 450px;
+  }
+  .right-container {
+    min-width: 450px;
+  }
+  progress[value]::-webkit-progress-bar {
+    width: 400px;
+  }
+  .storage-left {
+    right: 25%;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    width: 375px;
+    padding-bottom: 150px;
+  }
+  .left-container {
+    min-width: 350px;
+  }
+  .right-container {
+    min-width: 350px;
+  }
+  progress[value]::-webkit-progress-bar {
+    width: 270px;
+  }
+  .storage-left {
+    right: 25%;
+    width: 200px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: 325px;
+    padding-bottom: 150px;
+  }
+  .left-container {
+    min-width: 250px;
+  }
+  .right-container {
+    min-width: 250px;
+  }
+  progress[value]::-webkit-progress-bar {
+    width: 150px;
+  }
+  .storage-left {
+    font-size: 2rem;
+    top: 130px;
+    width: 180px;
+  }
+}
