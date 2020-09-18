@@ -13,37 +13,37 @@
 
 <body>
   <main>
-    <div class="left-container">
-      <img src="./images/logo.svg" alt="" srcset="" />
-
-      <div class="icons">
-        <div class="icons-item">
-          <img src="./images/icon-document.svg" alt="" srcset="" />
-        </div>
-        <div class="icons-item">
-          <img src="./images/icon-folder.svg" alt="" srcset="" />
-        </div>
-        <div class="icons-item">
-          <img src="./images/icon-upload.svg" alt="" srcset="" />
+    <div class="container">
+      <div class="left-container">
+        <img src="./images/logo.svg" alt="" srcset="" />
+  
+        <div class="icons">
+          <div class="icons-item">
+            <img src="./images/icon-document.svg" alt="" srcset="" />
+          </div>
+          <div class="icons-item">
+            <img src="./images/icon-folder.svg" alt="" srcset="" />
+          </div>
+          <div class="icons-item">
+            <img src="./images/icon-upload.svg" alt="" srcset="" />
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="right-container">
-      <p class="used-storage">
-        You’ve used <strong>815 GB</strong> of your storage
-      </p>
-
-      <p class="storage-left">
-        185 GB Left
-      </p>
-    
-      <div class="storage">
-        <p>0 GB</p>
-        <p>1000 GB</p>
+  
+      <div class="right-container">
+        <label for="file" class="used-storage">
+          You’ve used <strong>815 GB</strong> of your storage
+        </label>
+        <progress id="file" value="815" max="1000"> 81.5% </progress>
+        <label for="file" class="storage">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </label>
+        <p class="storage-left">
+          185 <span>GB Left</span>
+        </p>
       </div>
-    </div>
-   
+    </div>   
   </main>
 
   <footer>
