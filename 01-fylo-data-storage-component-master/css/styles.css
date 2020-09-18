@@ -1,0 +1,106 @@
+/* Font - Raleway 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+  /* primary colors */
+  --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+  /* neutral colors */
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+/* css reset */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: url("./../images/bg-desktop.png") no-repeat;
+  background-size: 100vw;
+  background-color: var(--very-dark-blue);
+  background-position-y: bottom;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 95vh;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.left-container {
+  align-items: flex-start;
+  background-color: var(--dark-blue);
+  border-radius: 20px 100px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  padding-left: 40px;
+  width: 450px;
+}
+
+.icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-item {
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  border-radius: 10px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.right-container {
+  align-items: flex-start;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-evenly;
+  padding: 0 40px 0 40px;
+  width: 850px;
+}
+
+.used-storage {
+  font-weight: 400;
+}
+
+.storage {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+footer {
+  bottom: 0;
+  position: relative;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 79%, 63%);
+}
